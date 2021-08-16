@@ -8,3 +8,5 @@ def index(request):
 def shrayash(request):
     return HttpResponse("Hello, Brian!")
 
+def greet(request, name):
+    return HttpResponse(f"Hello, {name.capitalize()}")
